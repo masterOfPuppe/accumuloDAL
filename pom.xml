@@ -10,7 +10,7 @@
 
     <properties>
         <accumuloVersion>1.7.2</accumuloVersion>
-        <scalaTestVersion>3.2.0-SNAP9</scalaTestVersion>
+        <scalaTestVersion>3.0.5</scalaTestVersion>
     </properties>
 
     <dependencies>
