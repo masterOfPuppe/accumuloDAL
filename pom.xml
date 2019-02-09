@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mars</groupId>
+    <artifactId>accumulo.dal</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <accumuloVersion>1.7.2</accumuloVersion>
+        <scalaTestVersion>3.2.0-SNAP9</scalaTestVersion>
+    </properties>
+
+    <dependencies>
+
+        <!-- Accumulo -->
+        <dependency>
+            <groupId>org.apache.accumulo</groupId>
+            <artifactId>accumulo-core</artifactId>
+            <version>${accumuloVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.accumulo</groupId>
+            <artifactId>accumulo-minicluster</artifactId>
+            <version>${accumuloVersion}</version>
+        </dependency>
+
+        <!-- Scala -->
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.12</artifactId>
+            <version>${scalaTestVersion}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
