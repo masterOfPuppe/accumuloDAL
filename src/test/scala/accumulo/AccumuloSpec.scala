@@ -1,8 +1,10 @@
 package accumulo
 
 import com.google.common.io.Files
+import org.apache.accumulo.core.data.Mutation
 import org.apache.accumulo.minicluster.{MiniAccumuloCluster, MiniAccumuloConfig}
 import org.scalatest.{BeforeAndAfterAll, MustMatchers, WordSpec}
+import utils.Utils
 
 class AccumuloSpec extends WordSpec with MustMatchers with BeforeAndAfterAll{
 
@@ -26,6 +28,7 @@ class AccumuloSpec extends WordSpec with MustMatchers with BeforeAndAfterAll{
 
   "this test" must {
     "pass" in {
+      Utils.fillAccumuloTable(null, "data.txt")
       1 must be(1)
     }
   }
